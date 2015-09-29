@@ -34,7 +34,7 @@
                 "dir": "ltr",
                 "draggable": "true",
                 "enabled": true,
-                "label": "New Task"
+                "label": "Button"
             },
             "listeners": [
                 {
@@ -48,6 +48,9 @@
             "prototype": "digit/ui/list.reel",
             "properties": {
                 "element": {"#": "list"},
+                "content": [
+                    ""
+                ],
                 "contentController": {"@": "rangeController"},
                 "contenteditable": "true",
                 "dir": "ltr",
@@ -55,17 +58,7 @@
             }
         },
         "rangeController": {
-            "prototype": "montage/core/range-controller",
-            "properties": {
-                "content": [
-                    "",
-                    "",
-                    ""
-                ],
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
-            }
+            "prototype": "montage/core/range-controller"
         },
         "title": {
             "prototype": "digit/ui/title.reel",
@@ -74,7 +67,7 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
-                "value": "Things To Do"
+                "value": "TODO"
             }
         }
     }
