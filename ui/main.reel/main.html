@@ -67,10 +67,13 @@
         "task1": {
             "prototype": "ui/task.reel",
             "properties": {
-                "element": {"#": "task1"}
+                "element": {"#": "task1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             },
             "bindings": {
-                "task": {"<-": "@list:iteration.object"}
+                "task": {"<->": "@list:iteration.object"}
             }
         },
         "title": {
