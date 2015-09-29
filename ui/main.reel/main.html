@@ -64,6 +64,15 @@
                 "organizedContent": []
             }
         },
+        "task1": {
+            "prototype": "ui/task.reel",
+            "properties": {
+                "element": {"#": "task1"}
+            },
+            "bindings": {
+                "task": {"<-": "@list:iteration.object"}
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -83,7 +92,7 @@
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
             https://bftzex.project.montagestudio.net/ui/task.reel/
-            <li></li>
+            <li data-montage-id="task1"></li>
         </ul>
     </div>
 </body>
